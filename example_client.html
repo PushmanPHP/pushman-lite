@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Client</title>
+</head>
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.7/socket.io.js"></script>
+    <script>
+        var socket = new io();
+
+        socket.on('CHANNEL_KEY:CHANNEL_NAME:EVENT_NAME', function(data) {
+            // do something
+            console.log(data);
+        });
+    </script>
+
+</body>
+</html>
